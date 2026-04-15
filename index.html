@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>ゴルフスイング・タイプ診断 | あなたの理想のフォームをチェック</title>
+    <meta name="description" content="13問の質問に答えるだけで、あなたの身体特性に合ったスイングタイプを判定します。自分に合ったスイングを見つけましょう。">
+    <meta property="og:title" content="ゴルフスイング・タイプ診断">
+    <meta property="og:description" content="身体特性から導き出すあなただけのスイング理論。今すぐチェック！">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="あなたのWebサイトURL">
+    <meta property="og:image" content="images/ogp-image.jpeg"> 
+    <meta property="og:site_name" content="GOLF Swing Checker">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <span class="header-logo">GOLF Swing Type Checker</span>
+        </div>
+    </header>
+
+
+    <main class="container">
+        <section id="intro">
+            <div class="notice-box">
+                <h1 class="main-title">ゴルフスイング<br>タイプ診断</h1>
+                <p class="description">13問の質問に答えて、あなたの身体特性に合った理想的なスイングタイプを判定します！</p>
+        
+                <div class="attention-point">
+                    <h2>⚠️ 答える時の注意点</h2>
+                    <p class="sub-notice">回答に迷ったら...</p>
+                    <ul>
+                        <li><span>「楽にできるのはどちらか？」</span></li>
+                        <li><span>「ゴルフを始めた頃はどうだったか？」</span></li>
+                        <li><span>「より自然な動きはどちらか？」</span></li>
+                    </ul>
+                    <p class="priority-text">を優先して回答してください！</p>
+                </div>
+            </div>
+            <button id="start-btn" class="main-btn">診断をスタートする</button>
+        </section>
+
+
+        <section id="quiz-area" style="display:none;">
+            <div class="progress-container">
+                <span id="progress-text">Q 1 / 13</span>
+                <div class="progress-bar"><div id="progress-core"></div></div>
+            </div>
+            
+            <div class="question-card">
+                <h3 id="question-text">読み込み中...</h3>
+                <div class="choice-container">
+                    <button class="choice-btn" id="choice-a">
+                        <span class="choice-text" id="text-a">選択肢A</span>
+                    </button>
+                    <button class="choice-btn" id="choice-b">
+                        <span class="choice-text" id="text-b">選択肢B</span>
+                    </button>
+                </div>
+
+                <div class="quiz-nav">
+                    <button id="prev-btn" class="nav-btn" disabled>← 前の質問</button>
+                    <button id="next-btn" class="nav-btn" disabled>次の質問 →</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="result-area" style="display:none;"></section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 GOLF Swing Checker</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
